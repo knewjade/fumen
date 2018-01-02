@@ -1,0 +1,37 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100vw;
+    max-width: 300px;
+    height: 100vh;
+    max-height: 300px;
+}
+
+.box {
+    position: relative;
+}
+
+#main {
+    background-color: red;
+    width: 100%;
+    height: 90%;
+}
+
+#sub {
+    background-color: blue;
+    width: 100%;
+    height: 10%;
+}

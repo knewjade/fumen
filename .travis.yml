@@ -6,6 +6,14 @@ deploy:
     access_key_id: ${AWS_ACCESS_KEY}
     secret_access_key: ${AWS_SECRET_KEY}
     region: ap-northeast-1
+    bucket: fumentools-dev
+    acl: public_read
+    local_dir: build
+    skip_cleanup: true
+  - provider: s3
+    access_key_id: ${AWS_ACCESS_KEY}
+    secret_access_key: ${AWS_SECRET_KEY}
+    region: ap-northeast-1
     bucket: fumentools
     acl: public_read
     local_dir: build
@@ -14,15 +22,3 @@ deploy:
       all_branches: true
       tags: true
       condition: $TRAVIS_TAG =~ ^v[0-9\\.]+
-  - provider: s3
-    access_key_id: ${AWS_ACCESS_KEY}
-    secret_access_key: ${AWS_SECRET_KEY}
-    region: ap-northeast-1
-    bucket: fumentools-dev
-    acl: public_read
-    local_dir: build
-    skip_cleanup: true
-    on:
-      all_branches: true
-      tags: true
-      condition: $TRAVIS_TAG =~ ^a[0-9\\.]+

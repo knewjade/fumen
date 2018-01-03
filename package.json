@@ -2,5 +2,17 @@
   "name": "fumen",
   "version": "0.0.1",
   "description": "Tetris Fumen Creator",
-  "author": "newjade"
+  "author": "newjade",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.3",
+    "run-sequence": "^2.2.0",
+    "typescript": "^2.6.2",
+    "vinyl-source-stream": "^2.0.0"
+  }
 }

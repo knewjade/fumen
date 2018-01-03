@@ -1,6 +1,6 @@
 language: node_js
 before_deploy:
-  - cp -r src/ build/
+  - npm build
 deploy:
   - provider: s3
     access_key_id: ${AWS_ACCESS_KEY}
